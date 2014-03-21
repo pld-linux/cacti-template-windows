@@ -45,5 +45,14 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc readme.txt
-%{resourcedir}/*.xml
-%{resourcedir}/snmp_queries/*.xml
+%{resourcedir}/cacti_data_query_snmp_informant_standard_-_cpu_statistics.xml
+%{resourcedir}/cacti_data_query_snmp_informant_standard_-_disk_statistics.xml
+%{resourcedir}/cacti_data_query_snmp_informant_standard_-_memory_statistics.xml
+%{resourcedir}/cacti_data_query_snmp_informant_standard_-_network_statistics.xml
+%{resourcedir}/cacti_data_query_snmp_informant_standard_-_objects_statistics.xml
+%{resourcedir}/cacti_host_template_windows_host_-_snmp_informant.xml
+%{resourcedir}/snmp_queries/snmp_informant_standard_cpu.xml
+%{resourcedir}/snmp_queries/snmp_informant_standard_disk.xml
+%{resourcedir}/snmp_queries/snmp_informant_standard_memory.xml
+%{resourcedir}/snmp_queries/snmp_informant_standard_network.xml
+%{resourcedir}/snmp_queries/snmp_informant_standard_objects.xml
