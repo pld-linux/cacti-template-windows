@@ -2,11 +2,12 @@
 Summary:	Cacti WinXP-Win8, Win2000-Server 2012 x32/x64 Templates
 Name:		cacti-template-%{template}
 Version:	13
-Release:	0.1
-License:	GPL v2
+Release:	1
+License:	Apache v2.0
 Group:		Applications/WWW
 Source0:	Cacti_SNMP_Informant_Standard_Metrics_v%{version}.zip
 # Source0-md5:	90f356a61f786cab266f4aea82fc3cf6
+# https://github.com/mrlesmithjr/cacti/
 URL:		http://forums.cacti.net/viewtopic.php?f=12&t=29832
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.554
@@ -29,7 +30,6 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{resourcedir}
 cp -a resource/* $RPM_BUILD_ROOT%{resourcedir}
 cp -a template/* $RPM_BUILD_ROOT%{resourcedir}
-
 
 %post
 %cacti_import_template %{resourcedir}/cacti_data_query_snmp_informant_standard_-_cpu_statistics.xml
